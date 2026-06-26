@@ -85,7 +85,7 @@
   /* ===== LANDING ===== */
   .lp-hero{background:linear-gradient(150deg,#0E6B57,#0A4A3C);color:#fff;padding:26px 20px 24px;text-align:center;position:relative}
   .lp-hero .kept{font-size:11px;background:rgba(255,255,255,.18);display:inline-block;padding:3px 10px;border-radius:12px;margin-bottom:12px;font-weight:700}
-  .lp-hero h2{font-size:20px;line-height:1.4;font-weight:800;margin-bottom:8px}
+  .lp-hero h2{font-size:15.5px;line-height:1.5;font-weight:800;margin-bottom:8px;letter-spacing:-0.3px;white-space:nowrap}
   .lp-hero p{font-size:12px;opacity:.9;margin-bottom:16px}
   .lp-cta{background:var(--accent);color:#231400;font-weight:800;font-size:14px;padding:13px;border-radius:24px;text-align:center;box-shadow:0 6px 16px rgba(232,145,43,.4)}
   .lp-sec{padding:20px 18px;border-bottom:8px solid #eef2f0}
@@ -103,6 +103,15 @@
   table.cmp th{background:var(--green);color:#fff;font-size:11px}
   table.cmp td:first-child{text-align:left;font-weight:700;background:#fafbfb}
   .ox-o{color:var(--green);font-weight:800}.ox-x{color:#cf5b4e;font-weight:800}
+  .cmp-cap{text-align:center;color:var(--green-dk);font-weight:800;font-size:12px;margin-top:12px}
+  .stat-row{display:flex;gap:9px;margin-bottom:12px}
+  .stat{flex:1;background:var(--green-lt);border-radius:12px;padding:14px 8px;text-align:center}
+  .stat .num{font-size:24px;font-weight:800;color:var(--green-dk);line-height:1}
+  .stat .num span{font-size:12px;font-weight:700;margin-left:2px}
+  .stat .lbl{font-size:10px;color:var(--gray);margin-top:6px;font-weight:600}
+  .stat-note{font-size:12px;color:#444;line-height:1.6;background:#fff;border:1px solid var(--line);border-radius:10px;padding:11px 12px}
+  .stat-note b{color:var(--green-dk)}
+  .src{font-size:9px;color:#aab2af;margin-top:8px}
   .trust{display:flex;flex-direction:column;gap:8px}
   .trust .t{display:flex;gap:9px;align-items:center;background:var(--green-lt);border-radius:10px;padding:10px 12px;font-size:12px;font-weight:600;color:var(--green-dk)}
   .faq .q{border:1px solid var(--line);border-radius:10px;padding:11px 12px;margin-bottom:8px}
@@ -225,14 +234,14 @@
       <div class="phone"><div class="notch"></div><div class="screen">
         <div class="lp-hero">
           <span class="kept">전·월세 가구 필수 점검</span>
-          <h2>집주인 보험은 ‘건물’만,<br>내 짐과 책임은 누가?</h2>
-          <p>전·월세 가구를 위한 임차인 화재보험 무료 점검</p>
-          <div class="lp-cta">무료로 내 보장 확인하기</div>
+          <h2>“건물주는 임차인의 과실로 인한<br>화재 발생 시 책임지지 않습니다”</h2>
+          <p>전·월세 가구를 위한 임차인 화재보험 무료 가입</p>
+          <div class="lp-cta">임차인을 위한 무료 화재보험</div>
         </div>
 
         <div class="lp-sec">
-          <h3>“집주인 보험 있으니 괜찮겠지?”</h3>
-          <div class="lead">가장 흔한 오해예요. 집주인 보험은 ‘건물(벽·구조)’만 보상합니다. 임차인에게는 3가지 책임이 남아요.</div>
+          <h3>“건물주 보험 있으니 괜찮겠지?”</h3>
+          <div class="lead">가장 흔한 오해예요. 건물주 보험은 ‘건물(벽·구조)’만 보상합니다. 임차인에게는 3가지 책임이 남아요.</div>
           <div class="risk3">
             <div class="r"><div class="e">📺</div><div class="t">내 가재도구<br>손해</div></div>
             <div class="r"><div class="e">🏠</div><div class="t">집주인<br>원상복구·배상</div></div>
@@ -264,28 +273,24 @@
             <tr><td>이웃 배상</td><td class="ox-x">X</td><td class="ox-o">O</td></tr>
             <tr><td>임시거주비</td><td class="ox-x">X</td><td class="ox-o">O</td></tr>
           </table>
+          <div class="cmp-cap">“보장 희망 시 무료 화재보험 가입 가능”</div>
         </div>
 
         <div class="lp-sec">
-          <h3>믿고 신청하세요</h3>
-          <div class="trust">
-            <div class="t">🛡️ 시너지그룹 보험 전문 상담사 1:1 무료 점검</div>
-            <div class="t">🙆 가입 강요 없음 · 보장 공백만 확인해도 OK</div>
-            <div class="t">⏱️ 1분 신청 · 상담은 원하는 시간에</div>
+          <h3>실제 임차인 화재 발생 건수</h3>
+          <div class="lead">화재는 남의 일이 아닙니다.</div>
+          <div class="stat-row">
+            <div class="stat"><div class="num">75,215<span>건</span></div><div class="lbl">최근 10년간 주택화재</div></div>
+            <div class="stat"><div class="num">1,435<span>명</span></div><div class="lbl">화재 사망자</div></div>
           </div>
-        </div>
-
-        <div class="lp-sec faq">
-          <h3>자주 묻는 질문</h3>
-          <div class="q"><b>Q. 집주인이 화재보험 들었는데도 필요한가요?</b><p>집주인 보험은 건물만 보장해, 임차인 책임과 내 물건은 빠집니다.</p></div>
-          <div class="q"><b>Q. 가입을 꼭 해야 하나요?</b><p>아니요. 무료로 보장 공백만 확인하셔도 됩니다.</p></div>
-          <div class="q"><b>Q. 보험료가 부담되지 않나요?</b><p>보장 범위에 따라 다르며, 상담 시 맞춤 설계로 안내합니다.</p></div>
+          <div class="stat-note">임차인이라면 내 물건뿐 아니라 <b>집주인·이웃에 대한 배상책임</b>까지 확인해야 합니다.</div>
+          <div class="src">* 출처: 소방청 국가화재정보시스템 (최근 10년 누계, 제휴사 제공 자료)</div>
         </div>
 
         <div class="lp-final">
-          <h3>1분이면 끝,<br>내 보장 공백 무료 확인</h3>
-          <div class="gift">☕ 확인만 해도 커피 기프티콘 증정 (상담 가능 고객 한정)</div>
-          <div class="lp-cta" onclick="show('v4',document.querySelectorAll('.tab')[3])">무료 점검 신청하기</div>
+          <h3>“화재보험 가입하고<br>무료 커피 쿠폰 받자”</h3>
+          <div class="gift">☕ 무료 화재보험 가입 고객 한정</div>
+          <div class="lp-cta" onclick="show('v4',document.querySelectorAll('.tab')[3])">무료 화재보험 가입 신청하기</div>
         </div>
         <div class="lp-fine">
           ※ 보험계약 체결 전 상품설명서 및 약관을 반드시 확인하시기 바랍니다.<br>
