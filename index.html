@@ -121,6 +121,28 @@
   .lp-final .gift{font-size:11px;opacity:.9;margin-bottom:16px}
   .lp-fine{background:#0a3329;color:#9fc4b9;font-size:9px;padding:12px 16px;line-height:1.6}
 
+  /* ===== LANDING · PDF 재작성 추가 ===== */
+  .risk-list{display:flex;gap:8px}
+  .risk-list .rk{flex:1;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 7px;text-align:center}
+  .risk-list .rk-tag{font-size:10.5px;font-weight:800;color:var(--accent-dk);margin-bottom:8px;letter-spacing:-.2px;line-height:1.35}
+  .risk-list .rk-q{font-size:10.5px;color:var(--gray);line-height:1.35;margin-bottom:9px;min-height:29px}
+  .risk-list .rk-amt{font-size:11px;color:var(--gray)}
+  .risk-list .rk-amt b{display:block;font-size:15px;font-weight:800;color:var(--green-dk);margin-top:2px}
+  .total-bar{background:linear-gradient(135deg,var(--green-dk),var(--green));color:#fff;border-radius:12px;
+             padding:13px 12px;text-align:center;font-size:12px;line-height:1.6;margin-top:12px}
+  .total-bar b{font-size:16px;color:#ffd98a}
+  table.covtbl{width:100%;border-collapse:collapse;font-size:11px}
+  table.covtbl th,table.covtbl td{border:1px solid var(--line);padding:9px 7px;vertical-align:middle}
+  table.covtbl th{background:var(--green);color:#fff;text-align:center;font-size:11px}
+  table.covtbl td:first-child{font-weight:800;text-align:center;background:#fafbfb;color:var(--green-dk);width:74px;line-height:1.35}
+  table.covtbl td:nth-child(2){text-align:left;color:#444;line-height:1.4}
+  table.covtbl td.amt{text-align:center;font-weight:800;color:var(--accent-dk);width:62px;line-height:1.35}
+  .benefit3{display:flex;gap:8px}
+  .benefit3 .bf{flex:1;background:var(--green-lt);border-radius:12px;padding:13px 7px;text-align:center}
+  .benefit3 .bf .e{font-size:23px}
+  .benefit3 .bf .bt{font-size:11.5px;font-weight:800;color:var(--green-dk);margin:6px 0 4px;line-height:1.25}
+  .benefit3 .bf .bd{font-size:9.5px;color:var(--gray);line-height:1.35}
+
   /* ===== FORM ===== */
   .fm-head{background:linear-gradient(135deg,#0E6B57,#0A4A3C);color:#fff;padding:20px;text-align:center}
   .fm-head h3{font-size:17px;font-weight:800}.fm-head p{font-size:11px;opacity:.9;margin-top:5px}
@@ -234,73 +256,84 @@
     <div>
       <div class="phone"><div class="notch"></div><div class="screen">
         <div class="lp-hero">
-          <span class="kept">전·월세 가구 필수 점검</span>
-          <h2>“건물주는 임차인의 과실로 인한<br>화재 발생 시 책임지지 않습니다”</h2>
-          <p>전·월세 가구를 위한 임차인 화재보험 무료 가입</p>
-          <div class="lp-cta">임차인을 위한 무료 화재보험</div>
+          <span class="kept">임차인 전용 화재보험</span>
+          <h2 style="white-space:normal">우리 집, 이웃, 그리고<br>소중한 살림까지<br>하나의 보장으로 지키는 법</h2>
+          <p>화재는 예고 없이 찾아옵니다. 내 실수가 아니어도 이웃과 건물에 대한 배상 책임은 임차인에게 돌아올 수 있어요. 지금 1분이면 미리 대비할 수 있습니다.</p>
+          <div class="lp-cta" onclick="show('v4',document.querySelectorAll('.tab')[3])">지금 무료로 화재보험 신청하기</div>
         </div>
 
         <div class="lp-sec">
-          <h3>“건물주 보험 있으니 괜찮겠지?”</h3>
-          <div class="lead">가장 흔한 오해예요. 건물주 보험은 ‘건물(벽·구조)’만 보상합니다. 임차인에게는 3가지 책임이 남아요.</div>
-          <div class="risk3">
-            <div class="r"><div class="e">📺</div><div class="t">내 가재도구<br>손해</div></div>
-            <div class="r"><div class="e">🏠</div><div class="t">집주인<br>원상복구·배상</div></div>
-            <div class="r"><div class="e">👨‍👩‍👧</div><div class="t">이웃<br>화재·누수 배상</div></div>
+          <h3>임차인에게 돌아오는 3가지 위험</h3>
+          <div class="lead">한 번의 화재로 이만큼의 책임이 남을 수 있습니다.</div>
+          <div class="risk-list">
+            <div class="rk">
+              <div class="rk-tag">RISK 1<br>이웃 배상</div>
+              <div class="rk-q">이웃집 피해가<br>생긴다면?</div>
+              <div class="rk-amt">최대<b>10억 원</b></div>
+            </div>
+            <div class="rk">
+              <div class="rk-tag">RISK 2<br>건물 손해</div>
+              <div class="rk-q">건물에 손해가<br>생긴다면?</div>
+              <div class="rk-amt">최대<b>2억 원</b></div>
+            </div>
+            <div class="rk">
+              <div class="rk-tag">RISK 3<br>생활 재산</div>
+              <div class="rk-q">가구·가전이<br>소실된다면?</div>
+              <div class="rk-amt">최대<b>3천만 원</b></div>
+            </div>
           </div>
+          <div class="total-bar">세 가지 위험을 한 번에<br><b>최대 12억 3천만 원</b>까지 든든하게</div>
         </div>
 
         <div class="lp-sec">
-          <h3>임차인 화재보험 6대 핵심 보장</h3>
-          <div class="lead">우리 집은 어디까지 보장될까요?</div>
-          <div class="grid6">
-            <div class="cov"><div class="e">🧯</div><div class="h">① 임차인 배상책임</div><div class="d">불로 집주인에게 물어줄 원상복구 비용</div></div>
-            <div class="cov"><div class="e">🏘️</div><div class="h">② 이웃집 화재 배상</div><div class="d">옆·윗·아랫집 번진 불·그을음 피해</div></div>
-            <div class="cov"><div class="e">📦</div><div class="h">③ 내 가재도구</div><div class="d">가전·가구·옷·PC 등 내 물건 보상</div></div>
-            <div class="cov"><div class="e">💧</div><div class="h">④ 누수 배상</div><div class="d">우리 집 누수로 아랫집에 생긴 피해</div></div>
-            <div class="cov"><div class="e">🛏️</div><div class="h">⑤ 임시거주비</div><div class="d">수리 기간 숙박·거주비 지원</div></div>
-            <div class="cov"><div class="e">⚖️</div><div class="h">⑥ 실화 벌금·법률</div><div class="d">실수로 난 불의 벌금·법률비용 여부</div></div>
-          </div>
+          <h3>보장 상세</h3>
+          <div class="lead">내 과실로 발생한 화재 손해까지 보장받을 수 있어요.</div>
+          <table class="covtbl">
+            <tr><th>구분</th><th>보장 내용</th><th>보장 한도</th></tr>
+            <tr><td>이웃집<br>배상책임</td><td>화재로 인접 세대에 발생한 재산 피해 배상</td><td class="amt">최대<br>10억 원</td></tr>
+            <tr><td>건물<br>손해배상책임</td><td>화재로 건물 자체에 발생한 손해 배상</td><td class="amt">최대<br>2억 원</td></tr>
+            <tr><td>가재도구<br>손해</td><td>가구·가전·생활용품 등 소실·손상 보상</td><td class="amt">최대<br>3천만 원</td></tr>
+          </table>
+          <div class="src">※ 위 금액은 총 보험가입금액 합산 기준이며, 세부 보장 내용과 가입 가능 여부는 보험사 심사 및 약관에 따라 달라질 수 있습니다.</div>
         </div>
 
         <div class="lp-sec">
-          <h3>집주인 보험 vs 내 보험</h3>
-          <div class="lead">왜 내 보험이 따로 필요할까요?</div>
+          <h3>건물주 보험 vs 내 보험</h3>
+          <div class="lead">“건물주 보험 있으니 괜찮겠지?” 건물주 보험은 ‘건물’만 보상합니다.</div>
           <table class="cmp">
-            <tr><th>보장 항목</th><th>집주인 보험</th><th>임차인 보험</th></tr>
-            <tr><td>건물 손해</td><td class="ox-o">O</td><td>-</td></tr>
+            <tr><th>보장 항목</th><th>건물주 보험</th><th>임차인 보험</th></tr>
+            <tr><td>건물 손해</td><td class="ox-o">O</td><td class="ox-o">O</td></tr>
             <tr><td>내 가재도구</td><td class="ox-x">X</td><td class="ox-o">O</td></tr>
-            <tr><td>집주인 배상</td><td class="ox-x">X</td><td class="ox-o">O</td></tr>
+            <tr><td>건물주 배상</td><td class="ox-x">X</td><td class="ox-o">O</td></tr>
             <tr><td>이웃 배상</td><td class="ox-x">X</td><td class="ox-o">O</td></tr>
-            <tr><td>임시거주비</td><td class="ox-x">X</td><td class="ox-o">O</td></tr>
           </table>
           <div class="cmp-cap">“보장 희망 시 무료 화재보험 가입 가능”</div>
         </div>
 
+
         <div class="lp-sec">
-          <h3>실제 임차인 화재 발생 건수</h3>
-          <div class="lead">화재는 남의 일이 아닙니다.</div>
+          <h3>화재사고, 남의 일이 아닙니다</h3>
+          <div class="lead">최근 10년, 이만큼의 주택 화재가 있었습니다.</div>
           <div class="stat-row">
             <div class="stat"><div class="num">75,215<span>건</span></div><div class="lbl">최근 10년간 주택화재</div></div>
             <div class="stat"><div class="num">1,435<span>명</span></div><div class="lbl">화재 사망자</div></div>
           </div>
-          <div class="stat-note">임차인이라면 내 물건뿐 아니라 <b>집주인·이웃에 대한 배상책임</b>까지 확인해야 합니다.</div>
+          <div class="stat-note">임차인이라면 내 물건뿐 아니라 <b>건물주·이웃에 대한 배상책임</b>까지 준비해야 합니다.</div>
           <div class="src">* 출처: 소방청 국가화재정보시스템 (최근 10년 누계, 제휴사 제공 자료)</div>
         </div>
 
         <div class="lp-final">
-          <h3>“화재보험 가입하고<br>무료 커피 쿠폰 받자”</h3>
-          <div class="gift">☕ 무료 화재보험 가입 고객 한정</div>
-          <div class="lp-cta" onclick="show('v4',document.querySelectorAll('.tab')[3])">무료 화재보험 가입 신청하기</div>
+          <h3>화재보험 신청하고<br>무료 커피 쿠폰 받자</h3>
+          <div class="gift">☕ 무료 화재보험 신청 고객 한정 · 신청만 해도 증정</div>
+          <div class="lp-cta" onclick="show('v4',document.querySelectorAll('.tab')[3])">지금 무료로 화재보험 신청하기</div>
         </div>
         <div class="lp-fine">
           ※ 보험계약 체결 전 상품설명서 및 약관을 반드시 확인하시기 바랍니다.<br>
-          ※ 기존 계약 해지 후 신규 계약 시 인수 거절·보험료 인상이 있을 수 있습니다.<br>
           ※ 보험상품은 보험사·심사 기준에 따라 가입이 제한될 수 있습니다.<br>
           ※ 본 페이지는 보험 모집을 위한 광고이며, 상담 신청 시 보험 모집 종사자가 안내합니다.
         </div>
       </div></div>
-      <div class="caption">배너 클릭 → 상세 설명 랜딩페이지 (공감→6대 보장→비교→화재 통계→가입 CTA)</div>
+      <div class="caption">배너 클릭 → 상세 설명 랜딩페이지 (문제제기 → 3대 위험·총 12.3억 → 보장 상세 → 비교 → 신청 혜택 → 통계 → CTA)</div>
     </div>
   </div>
 
